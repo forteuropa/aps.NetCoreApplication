@@ -7,7 +7,7 @@ node {
 
  	
 		stage('Building application'){
-			bat "\"${'tool MSBuild'}\" TemperatureApp.sln "
+			bat "${msbuild} TemperatureApp.sln "
 		}
 		stage("test"){
 		}
