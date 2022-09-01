@@ -5,9 +5,9 @@ node {
 			checkout scm
 		}
 		
-		stage('Restore Nuget'){
-			bat 'C:/tools/nuget.exe restore TemperatureApp.sln'
-		}
+		//stage('Restore Nuget'){
+		//	bat 'C:/tools/nuget.exe restore TemperatureApp.sln'
+		//}
 
  	
 		stage('Building application'){
