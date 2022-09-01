@@ -6,7 +6,7 @@ node {
 		}
 		
 		stage('Restore Nuget'){
-			bat 'C:\tools\nuget.exe restore TemperatureApp.sln'
+			bat 'C:/tools/nuget.exe restore TemperatureApp.sln'
 		}
 
  	
@@ -14,9 +14,6 @@ node {
 			bat "\"${tool 'MSBuild'}msbuild.exe\" TemperatureApp.sln "
 		}
 		
-		stage('Running Tests'){
-
-		}
 
 	
 }
