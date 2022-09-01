@@ -1,6 +1,6 @@
-pipeline {
-	agent any
-	stages{
+node {
+	def application
+
 		stage("Clone repository"){
 			checkout scm
 		}
@@ -9,5 +9,5 @@ pipeline {
 		}
 		stage("test")
 
-	}
+	
 }
