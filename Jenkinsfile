@@ -16,7 +16,8 @@ node {
 		}
 		
 		stage('Testing Unit')
-			bat 'C:/tools/NUnit.org/nunit-console/nunit3-console.exe UnitTestTemperature/bin/Debug/net6.0/UnitTestTemperatureApp.dll'
+			bat 'C:/tools/NUnit.org/nunit-console/nunit3-console.exe UnitTestTemperature/bin/Debug/net6.0/UnitTestTemperature.dll'
+											
 
 	
 }
