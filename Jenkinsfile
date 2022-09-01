@@ -9,6 +9,10 @@ node {
 		stage('Building application'){
 			bat "\"${tool 'MSBuild'}msbuild.exe\" TemperatureApp.sln "
 		}
+		
+		stage('Running Tests'){
+
+		}
 
 	
 }
