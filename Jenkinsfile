@@ -1,8 +1,12 @@
 node {
 	def application
 
-		stage("Clone repository"){
+		stage ('Clone repository'){
 			checkout scm
+		}
+		
+		stage('Restore Nuget'){
+			bat 'C:\tools\nuget.exe restore TemperatureApp.sln'
 		}
 
  	
