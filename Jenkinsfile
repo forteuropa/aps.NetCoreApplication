@@ -16,7 +16,7 @@ node {
 		}
 		
 		stage('Testing Unit')
-			sh "echo testing"
+			bat 'C:/Program Files (x86)/NUnit.org/nunit-console/nunit3-console.exe UnitTestTemperature/bin/Debug/net6.0/TemperatureApp.dll'
 
 	
 }
